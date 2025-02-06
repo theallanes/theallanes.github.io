@@ -1,0 +1,150 @@
+.content-projects{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 0rem 1rem 7rem;
+  height: 20rem;
+  background-color: #fff;
+}
+
+#modal-projects img{
+  width: 28rem;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  border-radius: 10px;
+  padding: 8px;
+  border: 3px solid;
+  box-shadow: 8px 8px 8px;
+}
+
+#modal-projects img:hover{
+  transition: ease-in-out 0.3s;
+  width: 30rem;
+  filter: blur(0px);
+  cursor: pointer;
+}
+
+.content-projects h2{
+    background-color: rgba(194, 231, 240, 0.664);
+    border-radius: 10px;
+}
+
+.bob-text, .ot-text, .sb-text{
+  position: absolute;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.795);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.bob-text{
+  top: 41%;
+  left: 50%;
+}
+
+.ot-text{
+  top: 103%;
+  left: 50%;
+}
+
+.sb-text{
+  top: 163%;
+  left: 50%;
+}
+
+#project1, #project2, #project3{
+  display: none;
+  position: absolute;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#project1{
+  top: 6rem;
+  left: 2rem;
+}
+
+#project2{
+  top: 10rem;
+  left: 2rem;
+}
+
+#project3{
+  top: 14rem;
+  left: 2rem;
+}
+
+  #project1 #content, #project2 #content, #project3 #content{
+    height: 20rem;
+    overflow-y: scroll;
+  }
+
+
+
+#project1 .modal, #project2 .modal, #project3 .modal{
+  width: 25rem;
+}
+
+#project1 .header{
+  background-color: rgb(253, 201, 224);
+}
+
+  #project2 .header{
+    background-color: rgb(253, 236, 201);
+  }
+
+  #project3 .header{
+    background-color: rgb(216, 253, 201);
+  }
+
+
+  /* Dropdown Menu */
+  .reset-container {
+    position: absolute;
+    display: inline-block;
+  }
+
+  .reset-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid black;
+    opacity: 0;
+    transform: translateY(-140px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+  }
+
+  .reset-container:hover .reset-content {
+    opacity: 1;
+    transform: translateY(-150px);
+    pointer-events: auto;
+  }
+
+  .reset-content a {
+    color: #0c0d0e;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+  }
+
+  .reset-content a:hover {
+    background: #f3f4f6;
+    border: 1px solid black;
+  }
+
+  .content-projects p{
+    margin-top: -1rem;
+    font-size: small;
+  }

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./projects.css"/>
+  <link rel="stylesheet" href="./skills.css"/>
+  <script src="./script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/1c0254f83b.js" crossorigin="anonymous"></script>
+  <title>Thea Llanes Portfolio</title>
+</head>
+<body>
+  <section class="container">
+
+    <div class="folders">
+      <img class="folder-img" src="images/pink-folder.png" alt="" onclick="popupFn('about')">
+      <p>About Me</p>
+      <img class="folder-img" src="images/green-folder.png" alt="" onclick="popupFn('skills')">
+      <p>Skills</p>
+      <img class="folder-img" src="images/purple-folder.png" alt="" onclick="popupFn('experience')">
+      <p>Resume</p>
+
+    </div>
+
+    <div class="second-file">
+      <img class="blue-folder-img" src="images/blue-folder.png" alt="" onclick="popupFn('projects')">
+      <p class="blue-folder-text">Projects</p>
+
+      <img class="file-img" src="images/7.png" alt="" onclick="popupFn('contact')">
+      <p class="file-img-text">Contact.txt</p>>
+    </div>
+
+    <div class="me-box">
+      <img class="light-pfp" src="images/light-me.png" alt="">
+      <img class="me" src="images/greeting.PNG" alt="">
+
+      <a href="https://www.linkedin.com/in/thea-llanes-488503299/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/theallanes"><i class="fa-brands fa-github"></i></a>
+      <a href="" onclick="copyFn()"><i class="fa-regular fa-envelope"></i></a>
+
+      <img class="sticky-note" src="images/sticky-note.png" alt="">
+
+      <div class="note-box">
+        <p>Hello<br>World!</p>
+        <img src="images/smile.png" alt="" width="70px">
+      </div>
+    </div>
+
+    <div class="dock">
+      <p class="time_display"><span id="date"></span><span id="time"></span></p>
+
+      <div class="reset-container">
+        <img src="images/monitor.png" alt="" width="80px" class="monitor-img" onclick="closeFn()">
+        <div class="reset-content">
+          <a href="">Reset</a>
+          <a onclick="lightMode()">Light/Dark Mode</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="about">
+      <div class="modal">
+        <div class="header">
+          <span id="title">About Me</span>
+          <span id="button" onclick="closeFn()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          <img src="images/aboutme.JPG" alt="" class="about-me">
+          <p>Hi there! My name is Thea Llanes, a Business Information Technology student at
+          Red River College with a passion for blending programming with creativity. <br>
+          Currently in my fourth term of Business IT,
+          I’m focused on developing my expertise in software engineering, and application design.
+          I’m passionate about creating clean, efficient code while also ensuring that my projects are user-friendly and visually engaging.
+          UI/UX design is an area I’m particularly excited about, as I believe great development goes hand-in-hand with intuitive design.
+          I’m always eager to tackle new challenges and continue enhancing my skills in IT, software development, and user experience design.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills">
+      <div class="modal">
+        <div class="header">
+          <span id="title">Skills</span>
+          <span id="button" onclick="closeFn()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          <button class="tablink" onclick="openPage('technical', this, '#606f5b')" id="defaultOpen">Technical</button>
+          <button class="tablink" onclick="openPage('soft', this, '#606f5b')">Soft</button>
+
+          <div id="technical" class="tabcontent">
+            <h2>Frontend</h2>
+            <p>JavaScript HTML CSS</p>
+            <img src="images/js.png" alt="">
+            <img src="images/html.png" alt="">
+            <img src="images/css.png" alt="">
+            <h2>Backend</h2>
+            <p>Python PHP C#</p>
+            <img src="images/python.png" alt="">
+            <img src="images/php.png" alt="">
+            <img src="images/c.png" alt="">
+            <h2>Database</h2>
+            <p>MySQL PostgreSQL SQL</p>
+            <img src="images/mysql.png" alt="">
+            <img src="images/postgresql.png" alt="">
+            <img src="images/sql.png" alt="">
+            <h2>Frameworks</h2>
+            <p>React Ruby-on-Rails Flask</p>
+            <img src="images/react.png" alt="">
+            <img src="images/ruby.png" alt="">
+            <img src="images/flask.png" alt="">
+            <h2>Tools</h2>
+            <p>VS-Code Git GitHub Figma</p>
+            <img src="images/vs.png" alt="">
+            <img src="images/git.png" alt="">
+            <img src="images/github.png" alt="">
+            <img src="images/figma.png" alt="">
+            <p>Astah</p>
+            <img src="images/astah.png" alt="">
+          </div>
+
+          <div id="soft" class="tabcontent">
+            <li>Adaptability</li>
+            <img src="images/adaptability.png" alt="" width="80px">
+            <p>With the tech industry constantly evolving and my eagerness to learn, I am able to
+              quickly adapt to new tools and methods.
+              Throughout my time in the Business IT Program,
+              I am consistently expanding my knowledge of various languages and frameworks,
+              effectively integrating them into my assignments and projects."
+            </p>
+
+            <li>Problem-Solving</li>
+            <img src="images/problem-solving.png" alt="" width="80px">
+            <p>I approach problems with a creative and critical mindset, by
+              breaking down complex problems to find effective solutions.
+              Through troubleshooting and debugging,
+              I am able to tackle tough technical issues with confidence and precision.</p>
+
+            <li>Team Collaboration</li>
+            <img src="images/team.png" alt="" width="80px">
+            <p>I excel in working within cross-functional teams, actively contributing ideas,
+              learning from peers, and fostering a collaborative environment.
+              I value communication and strive to ensure that
+              every team member's strengths are utilized to achieve success.
+            </p>
+
+            <li>Time Management</li>
+            <img src="images/time.png" alt="" width="80px">
+            <p>As someone who thrives on organization, I excel at staying on track and prioritizing tasks effectively.
+              Ensuring that assignments, projects, and other responsibilities are completed both efficiently and on time is important to me.
+              My ability to balance multiple responsibilities allows me to remain productive and consistently meet deadlines, regardless of the environment.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="experience">
+      <div class="modal">
+        <div class="header">
+          <span id="title">Resume</span>
+          <span id="button" onclick="closeFn()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          <button class="tablink" onclick="openPage('education', this, '#655b6f')" id="defaultOpen">Education</button>
+          <button class="tablink" onclick="openPage('exp', this, '#655b6f')">Experience</button>
+
+          <div id="education" class="tabcontent">
+              <p>Red River College - <small>Winnipeg, MB</small></p>
+              <p>• Business Information Technology</p>
+              <p>August 2023 - December 2025</p>
+
+              <p>• Intro to Business Information Technology</p>
+              <p>January 2023 - April 2023</p>
+
+              <img src="images/rrc.png" alt="">
+          </div>
+
+          <div id="exp" class="tabcontent">
+            <h4>Pharmacy OTC <small>(August 2024-Present)</small></h4>
+              <ul id="myList">
+                <li>Input and process client information, including insurance and prescription orders</li>
+                <li>Assist in dispensing medications</li>
+                <li>Maintain pharmacy products & equipment</li>
+                <li>Answer customer inquiries</li>
+              </ul>
+            <h4>Leadership <small>(2020-2021)</small></h4>
+            <ul id="myList">
+              <li>Coordinated and initiated school activities and fundraisers </li>
+              <li>Collaborated with external organizations for event planning </li>
+            </ul>
+            <h4>Customer Fulfillment <small>(October 2021-August 2024)</small></h4>
+            <ul>
+              <li>Ensure that purchases from customers are completed quickly and satisfactorily</li>
+              <li>Customer follow-up communication to ensure order and service expectations have been met</li>
+              <li>Assist customers as needed throughout the store</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="modal">
+        <div class="header">
+          <span id="title">Contact Me</span>
+          <span id="button" onclick="closeFn()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          <p>Get in touch </p>
+          <p>Thanks for looking at my portfolio! <br>I'd love to hear from you. <br>Feel free to contact me by the options below.</p>
+          <p><i class="fa-regular fa-envelope"></i> Email: zenthea07@gmail.com</p>
+          <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href=" https://www.linkedin.com/in/thea-llanes-488503299/">Thea Llanes</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="modal" id="modal-projects">
+        <div class="header">
+          <span id="title">Projects</span>
+          <span id="button" onclick="closeFn()"><span class="close">X</span></span>
+        </div>
+        <div class="content-projects">
+          <h2>Thea's Projects Archive:</h2>
+          <p>(click the project for more info.)</p>
+          <div class="bob" data-order="1">
+            <img src="images/bob.gif" alt="" onclick="openProject('project1')">
+            <div class="bob-text">E-commerce Website</div>
+          </div>
+
+          <div class="organization-tool" data-order="2">
+            <img src="images/todo.gif" alt="" onclick="openProject('project2')">
+            <div class="ot-text">Organization Tool</div>
+          </div>
+
+          <div class="sandbox" data-order="3">
+              <img src="images/ghibli.gif" alt="" onclick="openProject('project3')">
+              <div class="sb-text">Movie Search</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project1">
+      <div class="modal">
+        <div class="header">
+          <span id="title">E-commerce Website</span>
+          <span id="button" onclick="closeProject()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          Overview:
+          <p>
+            This project involves developing an e-commerce website for a small baking business, BitesOfBliss,
+            based in Winnipeg, Manitoba.
+            Using PHP and SQL, the site will allow admins to manage products,
+            customer orders, and reviews with CRUD functionality.
+          </p>
+          Tech Stack:
+          <ul>
+            <li>HTML, CSS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+          Features:
+          <ul>
+            <li>Admin Dashboard: manage products, orders, and registered users</li>
+            <li>CRUD Functions: Admins can post, update, edit, & delete products amd customers</li>
+            <li>Security: Validated and sanitized user inputs for secure login & registration</li>
+            <li>Session Management: Utilized PHP Session to handle/store user login throughout pages</li>
+          </ul>
+          Next Steps:
+          <ul>
+            <li>Responsive design for mobile</li>
+            <li>Create forms for placing orders</li>
+            <li>Improve homepage design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="project2">
+      <div class="modal">
+        <div class="header">
+          <span id="title">Organizational Tool</span>
+          <span id="button" onclick="closeProject()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          Overview:
+          <p>
+            Developed a simple to-do list application that allows users to
+            create, sort, edit, and delete tasks.
+            This application stores data locally in the browser's Local Storage
+            to save tasks even after closing the tab or refreshing.
+          </p>
+          Tech Stack:
+          <ul>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>Local Storage</li>
+          </ul>
+          Features:
+          <ul>
+            <li>Add new tasks to the to-do list</li>
+            <li>Sort and edit tasks</li>
+            <li>Persists list items  after refreshing using the browser's Local Storage</li>
+            <li>Mark tasks as checked/completed</li>
+            <li>Task item count</li>
+            <li>Delete all tasks</li>
+          </ul>
+          Next Steps:
+          <ul>
+            <li>Improve responsiveness for mobile</li>
+            <li>Delete individual tasks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="project3">
+      <div class="modal">
+        <div class="header">
+          <span id="title">Movie Search</span>
+          <span id="button" onclick="closeProject()"><span class="close">X</span></span>
+        </div>
+        <div id="content">
+          Overview:
+          <p>
+            Created a movie search application in Code Sandbox,
+            that allows users to search for films from the animation studio, Studio Ghibli.
+            By utilizing an external API, this application provides a responsive search feature that
+            filters movie results based on user input. <br>
+            Access to application: <a href="https://codesandbox.io/p/sandbox/studioghibli-api-zllanes-439lvr">Studio Ghibli Search</a>
+          </p>
+          Tech Stack:
+          <ul>
+            <li>HTML, CSS</li>
+            <li>ReactJS</li>
+          </ul>
+          Features:
+          <ul>
+            <li>Search by movie title</li>
+            <li>Responsive search feature: Results are filtered based on each letter that the user inputs</li>
+            <li>Movie Details: Includes the film's description, rating, relase date, and director</li>
+            <li>Integrated API: Used the Ghibli API from <a href="https://ghibliapi.vercel.app/">ghibliapi.vercel.app</a>, to fetch movie data</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

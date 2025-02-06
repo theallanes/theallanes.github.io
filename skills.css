@@ -1,0 +1,59 @@
+#skills .tablink:hover {
+  background-color: #606f5b;
+}
+
+#technical img{
+  display: flexbox;
+  width: 85px;
+  height: 80px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(33, 33, 37);
+  padding: 7px;
+  margin: 0.5rem;
+}
+
+#technical{
+  text-align: center;
+  margin-top: -25px;
+}
+
+#technical img:hover{
+  scale: 1.2;
+}
+
+#skills #content{
+  overflow-y: scroll;
+  height: 25rem;
+
+}
+
+#skills #content div{
+  padding-top: 70px;
+}
+
+#technical p{
+  word-spacing: 5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -2px;
+}
+
+#technical h2{
+  margin-bottom: -6px;
+  background-color: #606f5b7a;
+}
+
+#soft li{
+  font-weight: bold;
+  font-size: large;
+}
+
+#soft img:nth-child(odd){
+  float: left;
+}
+
+#soft img:nth-child(even){
+  float: right;
+}
