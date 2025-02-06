@@ -31,8 +31,7 @@ body{
   }
 
   .me{
-    visibility: visible;
-    z-index: -999;
+    visibility: hidden;
   }
 
   .note-box{
@@ -233,7 +232,6 @@ body{
   animation: animate-me 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  visibility: visible;
 }
 
 @keyframes animate-me {
