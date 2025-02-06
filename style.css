@@ -31,7 +31,8 @@ body{
   }
 
   .me{
-    visibility: hidden;
+    visibility: visible;
+    z-index: -999;
   }
 
   .note-box{
