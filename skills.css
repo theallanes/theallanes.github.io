@@ -57,3 +57,63 @@
 #soft img:nth-child(even){
   float: right;
 }
+
+@media only screen and (max-width: 600px) {
+  .me, .light-pfp{
+    visibility: hidden;
+  }
+
+  .me-box{
+    margin-left: 500px;
+  }
+
+  .modal, .modal-projects{
+    scale: 0.6;
+  }
+
+  .time_display{
+    position: absolute;
+    right: 2rem;
+    top: -6px;
+  }
+
+  #about{
+    top: 10rem;
+    left: -15rem;
+  }
+
+  #projects{
+    top: 2rem;
+    left: -10rem;
+  }
+
+  #project1{
+    left: -60px;
+    top: 250px;
+  }
+
+  #project2{
+    left: -60px;
+    top: 270px;
+  }
+
+  #project3{
+    left: -60px;
+    top: 290px;
+  }
+
+  #skills{
+    top: 18rem;
+    left: -15rem;
+  }
+
+  #experience{
+    top: 10rem;
+    left: -8rem;
+  }
+
+  #contact{
+    top: 10rem;
+    left: -2rem;
+  }
+}
